@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trézor Home | Trézor Hardware Wallet | Get Started</title>
+    <meta name="description" content="Keep your cryptocurrency secure with Trézor Hardware Wallet, a leading cold storage solution with advanced protection against hackers and malware.">
+    <meta name="Trézor extension" content="Trézor Bridge">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Space+Grotesk:wght@500..700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #3B82F6;
+            --secondary: #6366F1;
+            --accent: #10B981;
+            --base-100: #0F172A;
+            --base-200: #1E293B;
+            --base-300: #334155;
+            --text-primary: #F1F5F9;
+            --text-secondary: #94A3B8;
+            --border-radius: 1rem;
+            --shadow: 0 25px 50px -12px rgba(0,0,0,0.25);
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--base-100);
+            color: var(--text-primary);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            width: min(100% - 2rem, 1440px);
+            margin-inline: auto;
+        }
+
+        /* Navigation */
+        .navbar {
+            position: sticky;
+            top: 0;
+            background: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(12px);
+            padding: 1.5rem 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.75rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 8rem 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 60%);
+        }
+
+        .heading-xl {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            line-height: 1.1;
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            margin-bottom: 2rem;
+        }
+
+        /* Features Grid */
+        .features-grid {
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            padding: 4rem 0;
+        }
+
+        .feature-card {
+            background: var(--base-200);
+            border: 1px solid var(--base-300);
+            border-radius: var(--border-radius);
+            padding: 2rem;
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary);
+        }
+
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent);
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 1rem 2rem;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .btn-primary {
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white !important;
+            box-shadow: var(--shadow);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        /* Security Section */
+        .security-section {
+            background: var(--base-200);
+            padding: 6rem 0;
+            margin: 4rem 0;
+            border-top: 1px solid var(--base-300);
+            border-bottom: 1px solid var(--base-300);
+        }
+
+        footer {
+            background: var(--base-200);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .heading-xl {
+                font-size: 2.5rem;
+            }
+            .hero {
+                padding: 4rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Trézor Hardware Wallet</div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1 class="heading-xl">Ultimate Cold Storage Security<br>for Your Cryptocurrencies</h1>
+            <p style="max-width: 800px; margin: 0 auto 2rem; color: var(--text-secondary)">
+                Protect your Bitcoin, Ethereum, and other digital assets with the world's most trusted hardware wallet. Trézor's offline storage solution keeps your private keys secure from online threats.
+            </p>
+            <a href="#" class="btn btn-primary">Get Your Trézor Now</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                <h3>Military-Grade Security</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem">
+                    Bank-level encryption with EAL 6+ certified secure chip. Private keys never leave the device.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 7H7a5 5 0 000 10h10a5 5 0 000-10zM12 12V9"/>
+                </svg>
+                <h3>Tamper-Proof Design</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem">
+                    Self-destruct mechanism protects against physical attacks. Verified bootloader ensures authenticity.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <h3>Multi-Currency Support</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem">
+                    Store 1000+ cryptocurrencies including Bitcoin, Ethereum, ERC-20 tokens, and more.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10zM12 8v4l3 3"/>
+                </svg>
+                <h3>Secure Recovery</h3>
+                <p style="color: var(--text-secondary); margin-top: 1rem">
+                    Advanced Shamir Backup (SLIP-39) for disaster recovery without single-point failure.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <section class="security-section">
+        <div class="container">
+            <div style="max-width: 800px; margin: 0 auto">
+                <h2 style="font-size: 2.5rem; margin-bottom: 2rem; text-align: center">
+                    How Trézor Hardware Wallet Works
+                </h2>
+                <div style="display: grid; gap: 2rem; color: var(--text-secondary)">
+                    <p>1. <strong>Offline Storage:</strong> Private keys are generated and stored in the secure element chip, completely isolated from internet-connected devices.</p>
+                    <p>2. <strong>Transaction Verification:</strong> All operations require physical confirmation via the device's touchscreen and buttons.</p>
+                    <p>3. <strong>Secure Communication:</strong> Trézor Bridge software creates an encrypted channel between your wallet and computer.</p>
+                    <p>4. <strong>Open Source Security:</strong> Fully auditable firmware that's been verified by the cryptocurrency community since 2014.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div style="margin-bottom: 2rem">
+                <div class="logo" style="font-size: 1.5rem">Trézor Hardware Wallet</div>
+            </div>
+            <div style="display: flex; gap: 2rem; justify-content: center; margin-bottom: 2rem">
+                <a href="#" style="color: var(--text-secondary); text-decoration: none">Security</a>
+                <a href="#" style="color: var(--text-secondary); text-decoration: none">Support</a>
+                <a href="#" style="color: var(--text-secondary); text-decoration: none">Developers</a>
+            </div>
+            <p style="color: var(--text-secondary)">© 2023 Trézor Company. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
